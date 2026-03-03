@@ -2,12 +2,12 @@ from __future__ import annotations
 import pandas as pd
 from typing import Any, Dict, List, Optional
 
-from sanitipy.core.profiler import DataProfiler
-from sanitipy.core.scoring import QualityScorer
-from sanitipy.cleaning.deterministic import FixApplier
-from sanitipy.core.suggestions import DeterministicSuggestionEngine
-from sanitipy.report.exporter import ReportBuilder, JSONExporter
-from sanitipy.core.quality import (
+from sanitify.core.profiler import DataProfiler
+from sanitify.core.scoring import QualityScorer
+from sanitify.cleaning.deterministic import FixApplier
+from sanitify.core.suggestions import DeterministicSuggestionEngine
+from sanitify.report.exporter import ReportBuilder, JSONExporter
+from sanitify.core.quality import (
     RuleEngine,
     HighCardinalityRule,
     HighMissingRule,
@@ -17,7 +17,7 @@ from sanitipy.core.quality import (
 
 class DataCleaner:
     """
-    Public entry point for SanitiPy.
+    Public entry point for Sanitify.
     Stable API surface. Avoid breaking changes.
     """
     

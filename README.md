@@ -1,22 +1,22 @@
-# SanitiPy
+# Sanitify
 
 > Intelligent data quality analysis and ML-assisted data cleaning for production Python workflows.
 
-SanitiPy is a production-grade Python library built to systematically analyze, validate, score, and improve structured datasets before they enter analytics or machine learning pipelines.
+Sanitify is a production-grade Python library built to systematically analyze, validate, score, and improve structured datasets before they enter analytics or machine learning pipelines.
 
 It provides structured profiling, rule-based quality validation, explainable quality scoring, deterministic cleaning utilities, and ML-assisted fix suggestions — all through a single public entry point:
 
 ```python
-from sanitipy import DataCleaner
+from sanitify import DataCleaner
 ```
 
 ---
 
-## 🚀 Why SanitiPy?
+## 🚀 Why Sanitify?
 
 Modern data systems fail more often due to poor data quality than model limitations.
 
-SanitiPy helps teams:
+Sanitify helps teams:
 
 - Detect structural issues early
 - Quantify dataset health
@@ -37,7 +37,7 @@ Designed for:
  
 ## 🧠 Design Philosophy
 
-SanitiPy follows strict engineering principles:
+Sanitify follows strict engineering principles:
 
 - **Single public API** — `DataCleaner`
 - **No hidden mutations** — data is never altered silently
@@ -75,7 +75,7 @@ pip install -e ".[dev]"
 ### Future PyPI Install
 
 ```bash
-pip install sanitipy
+pip install sanitify
 ```
 
 ---
@@ -84,7 +84,7 @@ pip install sanitipy
 
 ```python
 import pandas as pd
-from sanitipy import DataCleaner
+from sanitify import DataCleaner
 
 df = pd.read_csv("data.csv")
 
@@ -138,10 +138,10 @@ Fully transparent. Fully explainable.
 
 ## 🏗 Architecture Overview
 
-SanitiPy uses a modular, production-oriented structure:
+Sanitify uses a modular, production-oriented structure:
 
 ```
-sanitipy/
+sanitify/
     datacleaner.py   # Public API
     core/            # Profiling, rules, scoring
     cleaning/        # Deterministic cleaning
@@ -164,7 +164,7 @@ sanitipy/
 
 ## 🧮 Quality Engine
 
-SanitiPy includes a rule-based validation system:
+Sanitify includes a rule-based validation system:
 
 Built-in rules (v1):
 
@@ -179,7 +179,7 @@ The engine is extensible and designed for future plugin support.
 
 ## 🔐 ML-Assisted Suggestions
 
-SanitiPy supports ML-driven fix recommendations.
+Sanitify supports ML-driven fix recommendations.
 
 Key guarantees:
 
@@ -214,10 +214,10 @@ pytest
 Run with coverage:
 
 ```bash
-pytest --cov=sanitipy --cov-report=term-missing
+pytest --cov=sanitify --cov-report=term-missing
 ```
 
-SanitiPy follows:
+Sanitify follows:
 
 - Test-driven development
 - Modular design
@@ -248,7 +248,7 @@ MIT License
 
 ## 🔮 Vision
 
-SanitiPy aims to become a lightweight but powerful data quality foundation layer for modern Python data stacks — sitting between raw ingestion and analytics/ML pipelines.
+Sanitify aims to become a lightweight but powerful data quality foundation layer for modern Python data stacks — sitting between raw ingestion and analytics/ML pipelines.
 
 Transparent. Deterministic. Extensible. Production-ready.
 "# trigger CI" 

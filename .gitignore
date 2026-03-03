@@ -1,5 +1,6 @@
 # Virtual env
 .venv/
+venv
 .env
 
 # Python cache
@@ -7,16 +8,20 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.so
 
 # Testing
 .pytest_cache/
 .coverage
 htmlcov/
+.cache
 
 # Packaging
 build/
 dist/
 *.egg-info/
+*.egg
+pip-wheel-metadata/
 
 # IDE
 .vscode/
@@ -25,3 +30,15 @@ dist/
 # OS
 .DS_Store
 Thumbs.db
+
+#Jupyter
+.ipynb-checkpoints/
+
+#Mypy
+.mypy-cache/
+
+#Ruff
+.ruff-cache/
+
+#logs
+*.log

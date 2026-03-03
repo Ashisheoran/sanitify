@@ -1,5 +1,5 @@
 import pandas as pd
-from sanitipy import DataCleaner
+from sanitify import DataCleaner
 
 
 def test_missing_percentage():

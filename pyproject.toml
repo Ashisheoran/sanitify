@@ -3,8 +3,8 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "sanitipy"
-version = "0.1.0"
+name = "sanitify"
+version = "0.1.2"
 description = "Intelligent Data Quality Analysis and ML-Assisted Data Cleaning"
 readme = "README.md"
 requires-python = ">=3.9"
